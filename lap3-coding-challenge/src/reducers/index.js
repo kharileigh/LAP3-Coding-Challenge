@@ -6,7 +6,7 @@ const initState = {
         followers_url: "",
 },
    
-    loading: false,
+    loading: true,
     error: false
 };
 
