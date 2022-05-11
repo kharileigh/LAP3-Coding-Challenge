@@ -1,12 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import {BrowserRouter} from 'react-router-dom'
+import reactDom from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+import App from './App';
+import store from './store';
+
+import './styles.css/index.css';
+
+reactDom.render(
+              <Router>
+                <React.StrictMode>
+                <Provider store={store}>
+                  <App />
+                </Provider>
+                </React.StrictMode>
+              </Router>,
+                document.getElementById('root'));
