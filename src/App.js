@@ -1,10 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components';
-import './styles.css/app.css';
 import * as Pages from './pages';
 
-import './App.css';
+import './styles/app.css';
 
 function App() {
   return (

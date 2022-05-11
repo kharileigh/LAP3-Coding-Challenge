@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../images';
+import gHLogo from '../../../public/images/github-logo.png';
+import './style.css';
 
 const NavBar = () => {
 
@@ -10,13 +11,14 @@ const NavBar = () => {
         navigate(-1);
     }
 
-    const img = <img src="../../images/github-logo.png" />
+
 
     return (
         <nav>
-            <img {...img} />
+            
+            <img src={gHLogo} />
            
-            <button onClick={handleClick}>Search New User</button>
+            <button className='button' onClick={handleClick}>Search New User</button>
         </nav>
     );
 }

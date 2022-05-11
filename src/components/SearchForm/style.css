@@ -1,0 +1,23 @@
+
+
+button {
+    font-size: 100%;
+    font-weight: 900;
+    text-align: center;
+    
+    
+   color: #d5c6e0;
+   background-color: #050609;
+
+   border-radius: 20%;
+     
+    
+}
+
+input {
+    background-color: #f1fffa;
+    color: #050609;
+    padding: 1%;
+    border-radius: 20%;
+
+}
