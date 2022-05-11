@@ -13,7 +13,7 @@ function App() {
       <main>
             <Routes>
               <Route path="/" element={<Pages.Search />} />
-              <Route path="/:username" element={<Pages.UserInfo />}/>
+              {/* <Route path="/:username" element={<Pages.UserInfo />}/> */}
             </Routes>
       </main>
     </div>
