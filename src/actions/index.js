@@ -24,10 +24,10 @@ const fetchUser = async searchUser => {
 }
 
 export const getUser = searchUser => {
-    return async (dispatch) => {
+    return (dispatch) => {
         dispatch(loading(searchUser));
         try {
-            const { login, avatar_url, repos_url, followers_url } = await fetchUser(searchUser);
+            const { login, avatar_url, repos_url, followers_url } = fetchUser(searchUser);
             dispatch(loadUser({ user: {login, avatar_url, repos_url, followers_url}}))
         } catch (err) {
             if (data.status === 404) { throw Error('Research your victim properly!') }
