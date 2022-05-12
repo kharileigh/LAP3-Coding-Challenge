@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import axios from 'axios';
-import './styles.css';
+import './style.css';
 
 const UserData = () => {
     

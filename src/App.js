@@ -11,8 +11,8 @@ function App() {
       <NavBar />
       <main>
             <Routes>
-              <Route path="/" element={<Pages.Search />} />
-              {/* <Route path="/:username" element={<Pages.UserInfo />}/> */}
+              <Route path="/" element={<Pages.SearchForm />} />
+              <Route path="/login" element={<Pages.UserData />}/>
             </Routes>
       </main>
     </div>
