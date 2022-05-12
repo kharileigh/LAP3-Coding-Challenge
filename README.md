@@ -5,6 +5,11 @@
 ## Installation 
 `npm run dev` : to run app
 
+## Technologies
+- React
+- Redux
+- Webpack
+
 ## Wins
 - Successfully fetches user and updates state (check Redux Dev Tools in Broswer)
 

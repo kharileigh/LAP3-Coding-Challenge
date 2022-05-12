@@ -1,0 +1,29 @@
+.card {
+    margin-top: 15%;
+}
+
+
+button {
+    font-size: 100%;
+    font-weight: 900;
+    text-align: center;
+    
+    
+   color: #d5c6e0;
+   background-color: #050609;
+
+   border-radius: 20%;
+     
+    
+}
+
+h1 {
+    color: #050609;
+    padding: 1%;
+
+}
+
+h3, h4 {
+    color:#f1fffa;
+    
+}
