@@ -1,35 +1,32 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getUser } from '../../actions';
 
 
-function User() {
+function User({ searchUser }) {
 
     const [ user, setUser ] = useState("getfutureproof");
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
-        if (state.state == 'null' || !state.state) {
-            setUser('getfutureproof')
-        } else {
-            setUser(state.state);
-        }
-    }, [])
+        dispatch(getUser("getfutureproof"));
+    }, []);
+
+    const dispatch = useDispatch();
+
 
     useEffect(() => {
         async function fetchUserData(){
             const username = await axios.get(`https://api.github.com/users/${username}`)
             const data = await username.json();
-            setUserData(data)
+            setUserData(username)
         }
 
         fetchUserData()
     }, [user])
 
 
-
-    // const dispatch = useDispatch();
-
-    // const newUser = user => dispatch(loadUser(user));
 
     return (
         <section>
