@@ -30,7 +30,7 @@ function SearchForm({ getUser }) {
 
     return (
         //----- FORM TO SEARCH USER
-        <div clasName='card'>
+        <div className='card'>
             <form aria-label="form" onSubmit={handleSubmit} className="usercard">
                 <input type="text"
                         aria-label="User"
