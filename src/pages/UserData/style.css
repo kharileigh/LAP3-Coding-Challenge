@@ -1,3 +1,6 @@
+.card {
+    margin-top: 15%;
+}
 
 
 button {
@@ -14,10 +17,13 @@ button {
     
 }
 
-input {
-    background-color: #f1fffa;
+h1 {
     color: #050609;
     padding: 1%;
-    border-radius: 20%;
 
+}
+
+h3, h4 {
+    color:#f1fffa;
+    
 }
