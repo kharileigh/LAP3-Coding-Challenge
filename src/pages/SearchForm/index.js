@@ -50,7 +50,16 @@ const SearchForm = () => {
         console.log(userData);
         
         // BUILD CARD DATA HERE!
-        return <h1>{userData.login}</h1>
+        return <> <h1>{userData.login}</h1>  
+                <h2>{userData.bio}</h2> 
+                <h3>Location: {userData.location}</h3>
+                <h3>Followers: {userData.followers}</h3>
+                <h3>Repositories: {userData.public_repos}</h3>
+               
+                
+                </> 
+                 
+                
     }
 
 
