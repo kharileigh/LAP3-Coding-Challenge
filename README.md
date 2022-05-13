@@ -2,6 +2,8 @@
 
 ## Creating a GitHub tracker to fetch random users and display onscreen
 
+## Site deployed at -> https://whose-code-do-you-want-to-steal.netlify.app/
+
 ## Installation 
 `npm run dev` : to run app
 
