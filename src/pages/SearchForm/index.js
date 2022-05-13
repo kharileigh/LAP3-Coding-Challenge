@@ -14,7 +14,7 @@ const SearchForm = () => {
     // const dispatch = useDispatch();
 
     const [ inputUser, setInputUser ] = useState("");
-    const [ user, setUser ] = useState("");
+    const [ user, setUser ] = useState("getfutureproof");
     const [ userData, setUserData ] = useState([]);
     const navigate = useNavigate();
    
@@ -24,14 +24,14 @@ const SearchForm = () => {
     useEffect(() => {
         async function searchApi(searchUser) {
             try {
-                const result = await axios.get(`https://api.github.com/users/?q=${searchUser}`);
+                const result = await axios.get(`https://api.github.com/users/${searchUser}`);
                 console.log(result.data);
                 setUserData(result.data);
             } catch(err) {
                 console.error(err);
             }
         }
-        searchApi(userData);
+        searchApi(user);
     }, [user]);
 
 
@@ -47,11 +47,10 @@ const SearchForm = () => {
     }
 
     function renderUser() {
-        return userData.map((s, i) => <li key={i}
-                                       className="user-info"
-                                       onClick={() => { navigate (`/${s.users.login}` )}}>
-                                       {s.users.login}
-                                       </li>)
+        console.log(userData);
+        
+        // BUILD CARD DATA HERE!
+        return <h1>{userData.login}</h1>
     }
 
 
