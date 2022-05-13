@@ -18,7 +18,7 @@ const NavBar = () => {
             
             <img src={gHLogo} />
            
-            <button className='button' onClick={handleClick}>Search New User</button>
+            {/* <button className='button' onClick={handleClick}>Search New User</button> */}
         </nav>
     );
 }

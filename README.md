@@ -11,7 +11,7 @@
 - Webpack
 
 ## Wins
-- Successfully fetches user and updates state (check Redux Dev Tools in Broswer)
+- Successfully fetches user and displays the relevant information on screen
 
 ## Challenges
-- Struggled to create the structure we'd like to display user info
+- Struggled to set up the functionality to update the store then fetch state from there
