@@ -1,6 +1,6 @@
-# LAP3 CODING PROJECT 
+# GitHub Tracker
 
-##  Creating a GitHub tracker to fetch random users and display onscreen
+## LAP3 Coding Challenge | Creating a GitHub tracker to fetch random users and display onscreen
 
 ### Site deployed at -> https://whose-code-do-you-want-to-steal.netlify.app/
 
